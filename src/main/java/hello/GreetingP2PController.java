@@ -14,7 +14,7 @@ public class GreetingP2PController {
 	public GreetingP2PController(SimpMessagingTemplate messaging){
 		this.messaging=messaging;
 	}
-    @MessageMapping("/hello")
+    @MessageMapping("/say")
     public void greeting(Principal principal,HelloMessage message) throws Exception {
         Thread.sleep(1000); // simulated delay
         System.out.println(principal.getName()+" send a message!");
