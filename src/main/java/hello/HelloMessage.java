@@ -3,6 +3,7 @@ package hello;
 public class HelloMessage {
 
     private String name;
+    private String content;
 
     public HelloMessage() {
     }
@@ -18,4 +19,13 @@ public class HelloMessage {
     public void setName(String name) {
         this.name = name;
     }
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+    
 }
